@@ -46,10 +46,8 @@ function init() {
     helper2 = new RectAreaLightHelper(rectLight2);
     helper3 = new RectAreaLightHelper(rectLight3);
 
-    scene.add(helper1);
-    scene.add(helper2);
-    scene.add(helper3);
-
+    let helpers = [helper1, helper2, helper3]
+    scene.add(helpers);
 
     const geoFloor = new THREE.BoxGeometry(2000, 0.1, 2000);
     const matStdFloor = new THREE.MeshStandardMaterial({ color: 0xbcbcbc, roughness: 0.1, metalness: 0 });
